@@ -3,22 +3,22 @@ public class OneOfEachStats {
 public static void main(String[] args)
 {
 
-double t = Double.parseDouble(args[0]);
+int t = Integer.parseInt(args[0]);
+int seed = Integer.parseInt(args[1]);
+Random generator = new Random(seed);
 int count = 0; 
 double sumAllFamily = 0; 
 int twoChild=0; 
 int threeCchild=0; 
 int fourChild=0; 
-int seed = Integer.parseInt(args[1]);
-Random generator = new Random(seed);
 
 
   boolean g = false ; 
   boolean b = false ; 
   int childSum = 0; 
-  double child = (double) ((Math.random() * (1-0))+0);
+  double child = (double) (generator.nextDouble());
   
-  while (count < t )
+  while (count <t )
   {
     while ( g == false || b == false)
       {
@@ -35,20 +35,20 @@ Random generator = new Random(seed);
 
         sumAllFamily ++;  
         childSum ++; 
-        child = (double) ((Math.random() * (1-0))+0); 
+        child = (double) (generator.nextDouble());
 
      }
           if (childSum == 2)
           {
             twoChild ++; 
           }
-          if (childSum == 3)
+         if (childSum == 3)
           {
               threeCchild++;
           }
           if (childSum >=4 )
            {
-             fourChild++; 
+                    fourChild++; 
            }
           
           childSum = 0; 
@@ -78,8 +78,8 @@ Random generator = new Random(seed);
             }
          if (mostCommonChild == fourChild)
             {
-                        System.out.println("The most common number of children is 4 or more."); 
-                }
+                System.out.println("The most common number of children is 4 or more."); 
+            }
          
          
          
