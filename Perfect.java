@@ -29,7 +29,7 @@ if (sum == a)
 }
 else 
 {
-   System.out.println(a + " is  not a perfect number");
+   System.out.println(a + " is not a perfect number");
 }
 
 }

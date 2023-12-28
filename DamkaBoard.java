@@ -15,7 +15,7 @@ public static void main(String[] args)
 
         if (i%2==0)
         {
-          System.out.println( " " + " " );
+          System.out.println();
           System.out.print(" ");
         }
         else
