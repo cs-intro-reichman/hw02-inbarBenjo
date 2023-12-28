@@ -9,7 +9,7 @@ public static void main(String[] args)
      int b = 0; 
      while (b < n) 
      {
-       System.out.print("*");
+       System.out.print("* " );
        b++;
      }
 
