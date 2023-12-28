@@ -12,7 +12,7 @@ for (int i = len-1; i >= 0 ; i -- )
 int mid = len / 2 ; 
 
 System.out.println(b);
-System.out.println(" The middle character is " + b.charAt(mid));
+System.out.println("The middle character is " + b.charAt(mid));
 
 
 } 
