@@ -69,16 +69,16 @@ Random generator = new Random(seed);
          System.out.println("Number of families with 4 children: " + fourChild ); 
          if (mostCommonChild == twoChild)
          {
-                 System.out.println("The most common number of children is 2." ); 
+                 System.out.println("The most common number of children is 2" ); 
          }
         
          if (mostCommonChild==threeCchild)
             {
-                System.out.println("The most common number of children is 3." ); 
+                System.out.println("The most common number of children is 3" ); 
             }
          if (mostCommonChild == fourChild)
             {
-                        System.out.println("The most common number of children is 4 or more." ); 
+                        System.out.println("The most common number of children is 4 or more" ); 
                 }
          
          
