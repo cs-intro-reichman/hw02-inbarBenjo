@@ -15,7 +15,7 @@ int fourChild=0;
   int childSum = 0; 
   double child = (double) ((Math.random() * (1-0))+0);
   
-  while (count <=t )
+  while (count < t )
   {
   	while ( g == false || b == false)
 	  {
@@ -31,7 +31,7 @@ int fourChild=0;
   		}
 
         sumAllFamily ++;  
-    	  childSum ++; 
+    	childSum ++; 
         child = (double) ((Math.random() * (1-0))+0); 
 
      }
@@ -39,13 +39,13 @@ int fourChild=0;
     	  {
     	  	twoChild ++; 
     	  }
-        if (childSum == 3)
+          if (childSum == 3)
           {
               threeCchild++;
           }
           if (childSum >=4 )
            {
-             		fourChild++; 
+             fourChild++; 
            }
     	  
        	  childSum = 0; 

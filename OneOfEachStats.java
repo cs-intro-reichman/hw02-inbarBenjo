@@ -3,7 +3,7 @@ public class OneOfEachStats {
 public static void main(String[] args)
 {
 
-double t = Integer.parseInt(args[0]);
+double t = Double.parseDouble(args[0]);
 int count = 0; 
 double sumAllFamily = 0; 
 int twoChild=0; 
@@ -16,9 +16,9 @@ Random generator = new Random(seed);
   boolean g = false ; 
   boolean b = false ; 
   int childSum = 0; 
-  double child = (double) (generator.nextDouble());
+  double child = (double) ((Math.random() * (1-0))+0);
   
-  while (count <=t )
+  while (count < t )
   {
     while ( g == false || b == false)
       {
@@ -34,21 +34,21 @@ Random generator = new Random(seed);
         }
 
         sumAllFamily ++;  
-          childSum ++; 
-        child = (double) (generator.nextDouble());
+        childSum ++; 
+        child = (double) ((Math.random() * (1-0))+0); 
 
      }
           if (childSum == 2)
           {
             twoChild ++; 
           }
-        if (childSum == 3)
+          if (childSum == 3)
           {
               threeCchild++;
           }
           if (childSum >=4 )
            {
-                    fourChild++; 
+             fourChild++; 
            }
           
           childSum = 0; 
@@ -64,9 +64,9 @@ Random generator = new Random(seed);
         int mostCommonChild = Math.max(max1,fourChild); 
 
          System.out.println("Average: " + average + " children to get at least one of each gender");
-         System.out.println("Number of families with 2 children: " + twoChild); 
-         System.out.println("Number of families with 3 children: " + threeCchild); 
-         System.out.println("Number of families with 4 or more children: " + fourChild); 
+         System.out.println("Number of families with 2 children:" + twoChild); 
+         System.out.println("Number of families with 3 children:" + threeCchild); 
+         System.out.println("Number of families with 4 or more children:" + fourChild); 
          if (mostCommonChild == twoChild)
          {
                  System.out.println("The most common number of children is 2."); 
