@@ -11,7 +11,7 @@ public static void main(String[] args)
      {
        if (i% 2 == 0 && b == n -1)
        {
-        System.out.print("*" );
+        System.out.print("*");
        }
        else{
           System.out.print("* " );
