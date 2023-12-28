@@ -63,10 +63,10 @@ Random generator = new Random(seed);
         int max1 = Math.max(twoChild,threeCchild);
         int mostCommonChild = Math.max(max1,fourChild); 
 
-         System.out.println("Averag: " + average + " children to get at least one of each gender");
+         System.out.println("Average: " + average + " children to get at least one of each gender");
          System.out.println("Number of families with 2 children: " + twoChild); 
          System.out.println("Number of families with 3 children: " + threeCchild); 
-         System.out.println("Number of families with 4 children: " + fourChild); 
+         System.out.println("Number of families with 4  or more children: " + fourChild); 
          if (mostCommonChild == twoChild)
          {
                  System.out.println("The most common number of children is 2."); 
