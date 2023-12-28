@@ -9,12 +9,12 @@ public static void main(String[] args)
      int b = 0; 
      while (b < n) 
      {
-       if (i% 2 == 0 && b == n -1)
+       if (i% 2 != 0 && b == n -1)
        {
         System.out.print("*");
        }
        else{
-          System.out.print("* " );
+          System.out.print("* ");
        }
        b++;
      }
